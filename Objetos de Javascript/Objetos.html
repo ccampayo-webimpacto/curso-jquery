@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Objetos 101</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<div class="container text-center">
+	
+	<h1>Objetos 101: <small>Comprendiendo lo básico</small></h1>
+	<hr>
+	<button id="bt-e" class="btn btn-primary">Encender</button>
+	<button id="bt-a" class="btn btn-primary">Apagar</button>
+
+</div>
+
+
+<script>
+
+
+	var carro={
+		encendido:true,
+		llantas:4,
+		puertas:5,
+		marca:"BmW",
+		colores:["azul","blanco","rojo","negro"],
+		fabricante:{
+			creador:"BmW",
+			telefono:"55-55-55",
+			direccion:"calle toledo",
+		},
+		arrancar:function(){
+			if(carro.encendido==false){
+				console.log("el vehiculo arranca.");
+				carro.encendido=true;
+			}else{
+				console.log("el vehiculo estaba encendido.");
+			}
+				
+
+		},
+		apagar:function(){
+			if(carro.encendido==true){
+				console.log("el vehiculo se apaga.");
+				carro.encendido=false;
+			}else{
+				console.log("el vehiculo estaba apagado.");
+			}
+			
+			
+		}
+
+	};
+	// var fab=carro.fabricante;
+	// console.log(fab.direccion);
+	// fab.direccion="calle carro";
+	// console.log(fab.direccion);
+	// console.log(carro.fabricante.direccion);
+	// carro.arrancar();
+	// carro.apagar();
+	$("#bt-e").on("click",function(){
+		carro.arrancar();
+	});
+	$("#bt-a").on("click",function(){
+		carro.apagar();
+	})
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Lección 03 - Eventos</title>
+
+    <!-- Importacion del jQuery -->
+    <script src="js/lib/jquery-2.1.4.min.js"></script>
+
+    <!-- Importacion del Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .img100 {
+        height: 100px;
+        width: 100px;
+      }
+      .divRojo {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lección 03: Eventos</h1>
+      <hr />
+
+      <button id="boton1" class="btn-primary btn">Evento click</button>
+
+      <img src="img/profesor.jpg" alt="profesor" class="img100" />
+	  <div class="divRojo"></div>
+	  <br><br>
+	  <a id="linkGoogle" href="https://www.google.es/">Ir a udemy</a>
+
+	  <br><br>
+
+    </div>
+
+    <script>
+      $("#boton1")
+        .on("click", function () {
+          console.log("click");
+        })
+        .end();
+      //evento mouseenter
+      $(".img100")
+        .on("mouseenter", function () {
+          $(this).attr("src", "img/nophoto.jpg");
+          console.log("entro en imagen");
+        })
+        .end();
+      $(".img100")
+        .on("mouseleave", function () {
+          console.log("salgo de la imagen");
+          $(this).attr("src", "img/profesor.jpg");
+        })
+		.end();
+		
+		$(".divRojo")
+        .on("click", function () {
+          console.log("click en el div rojo");
+        })
+		.end();
+		//contoles especiales para links
+		//comportamiento por defecto
+		$("#linkGoogle").on("click",function(e){
+			e.preventDefault();
+			console.log("Click en el link...");
+
+			var link=$(this).attr("href");
+			console.log(link);
+
+			window.location=link;
+		});
+
+		$(document).ready(function(){
+			console.log("la pagina esta lista para lo que sea.");
+		});
+
+    </script>
+  </body>
+</html>

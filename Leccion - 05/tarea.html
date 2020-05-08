@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Lección 05 - On y Bind</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+	
+	<h1>Tarea: tabla del 3</h1>
+	<hr>
+    <select class="form-control" id="select-1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    <button class="btn btn-primary">Agregar línea</button>
+    
+    <table class="table-active table">
+        <thead>
+            <tr>
+              <th scope="col">Base</th>
+              <th scope="col">x</th>
+              <th scope="col">Número</th>
+              <th scope="col">=</th>
+              <th scope="col">Resultado</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>            
+    </table>
+
+
+
+</div>
+
+<script>
+
+	(function(){
+		var contador=0;
+		$("button").on("click",function(){
+            var n=$("#select-1").val();
+            var fila="<tr><td scope='col'>"+n+"</td><td scope='col'>x</td><td scope='col'>"+contador+"</td><td scope='col'>=</td><td scope='col'>"+n*contador+"</td></tr>";
+            contador++;
+			console.log("click");
+			$("tbody").append(fila);
+			
+		});
+
+        $("#select-1").on("change",function(){
+            contador=0;
+            $("tr").not(":eq(0)").remove();
+        })
+	})();
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

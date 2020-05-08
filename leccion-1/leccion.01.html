@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lección 01 - Bootstrap</title>
+    <!-- importacion jQuery -->
+    <script src="js/lib/jquery-3.5.1.min.js"></script>
+    <!-- importacion bootstrap -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-4.4.1/bootstrap-4.4.1/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .textoVerde {
+        color: green;
+      }
+    </style>
+    <script>
+      /* $(document).ready(function () {
+        $("ul").addClass("textoVerde");
+        // jQuery('ul').css('font-weight','bold');
+      }); */
+      $(function () {
+        $("li:first-child").addClass("textoVerde");
+        $("li:last-child").addClass("textoVerde");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lección 01</h1>
+      <hr>
+      <ul>
+        <li><span class="label label-primary">hola1</span></li>
+        <li>hola2</li>
+        <li>hola3</li>
+      </ul>
+      <ul>
+        <li>Negrita</li>
+        <li>Negrita</li>
+        <li>Negrita</li>
+      </ul>
+      <table>
+          <tr class="table table-striped">
+              <td>campo</td>
+              <td>campo</td>
+              <td>campo</td>
+              <td>campo</td>
+              <td>campo</td>
+          </tr>
+      </table>
+      <button>asd</button>
+      <a href="">Punto de anclaje</a>
+    </div>
+  </body>
+</html>

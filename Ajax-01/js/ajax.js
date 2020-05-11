@@ -6,8 +6,8 @@ $.ajax({
     dataType:'json'
 }).done(function(data){
     console.log("Hecho correcto!");
-    var person=data;
-    console.log(person);
+    var wheather=data;
+    console.log(wheather);
     $("#foto").attr("src",data.picture);
     $("#txtNombre").val(data.name);
     $("#txtDireccion").val(data.address);

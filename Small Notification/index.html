@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Small Notification</title>
+
+    <!-- Importacion del jQuery -->
+    <script src="js/lib/jquery-2.1.4.min.js"></script>
+
+    <script src="js/lib/TweenMax.min.js"></script>
+
+    <!-- Importacion del Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/regular.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/svg-with-js.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/solid.min.css" />
+
+    <script src="js/smallBox.js"></script>
+  </head>
+  <body>
+    <!-- <div class="smallBox-contenedor">
+      <div class="smallBox-foto">
+        <img src="img/foto.jpg" alt="" />
+      </div>
+      <div class="smallBox-contenido">
+        <div class="smallBox-textoContenedor">
+          <span class="smallBox-titulo">Al aire</span>
+          <span class="smallBox-subTitulo">La voz de Costa Risca</span>
+        </div>
+        <div class="smallBox-pico"></div>
+        <div class="smallBox-cajaColor">
+          <div class="smallBox-colorTexto">
+            <i class="fa fa-bell"></i> Karen Melisa 107.1fm
+          </div>
+          <div class="smallBox-colorIcon">
+            <i class="fa fa-envelope fa-2x"></i>
+          </div>
+        </div>
+        <div class="smallBox-sombra"></div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <h1>Small: <small>Notification</small></h1>
+      <hr />
+    </div>
+
+    <script>
+      $(document).ready(function () {
+		console.log("Pagina cargada...");
+		$.smallBox({
+			titutlo: "titulo",
+			subtitulo: "subtitulo",
+			contenido: "contenido",
+			img:  "img/foto2.png",
+		});
+      });
+    </script>
+  </body>
+</html>

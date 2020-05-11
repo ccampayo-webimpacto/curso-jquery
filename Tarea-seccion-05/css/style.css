@@ -1,0 +1,61 @@
+.smallBox-contenedor{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+}
+.smallBox-foto{
+
+    float: left;
+    margin-right: -3px;
+}
+.smallBox-foto img{
+    width: 90px;
+    height: 90px;
+}
+.smallBox-contenido{
+    float: left;
+}
+.smallBox-textoContenedor{
+    margin-left: 10px;
+    float: left;
+    padding-top: 20px;
+    width: 150px;
+}
+.smallBox-textoContenedor span{
+    display: block;
+    color: white;
+}
+.smallBox-titulo{
+    font-size: 18px;
+    color: #5b5b5b;
+}
+.smallBox-subTitulo{
+    font-size: 12px;
+    color: #282828;
+}
+.smallBox-cajaColor{
+    background-color: #95d38d;
+    color: white;
+    padding-left: 15px;
+    
+    height: 90px;
+    /* line-height: 90px; */
+    /* border-radius: 5px; */
+    overflow: hidden;
+}
+.smallBox-colorTexto{
+    font-size: 16px;
+    float: left;
+
+}
+.smallBox-colorIcon{
+    float: right;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    /* background-color: #77ab00; */
+    line-height: 90px;
+    margin-left: 13px;
+    padding-top: 5px;
+}

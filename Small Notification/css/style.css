@@ -1,7 +1,7 @@
 .smallBox-contenedor{
     position: fixed;
-    top: 100px;
-    left: 10px;
+    bottom: 10px;
+    right: 10px;
     width: 400px;
     /* height: 250px; */
     /* background-color: red; */
@@ -54,6 +54,7 @@
     background-color: #77ab00;
     line-height: 60px;
     margin-left: 13px;
+    padding-top: 5px;
 }
 .smallBox-sombra{
     width: 90%;

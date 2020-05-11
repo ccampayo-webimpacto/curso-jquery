@@ -20,26 +20,24 @@
 </head>
 <body>
 
-	<div class="bigBox-Fondo">
+	<!-- <div class="bigBox-Fondo">
 
-	</div>
+	</div> -->
 
-<div class="bigBox-contenedor" align="center">
+<!-- <div class="bigBox-contenedor" align="center">
 	<div class="big-Box-Cerrar"><i class="fas fa-times"></i></div>
 	<div class="big-Box-Circulo"><i class="far fa-thumbs-up fa-3x"></i></div>
 	<div class="big-Box-Contenido">
 		<span class="big-Box-Contenido-Titulo">Genial!</span>
 		<span class="big-Box-Contenido-Texto">Estamos listos para proceder usando Udemy</span>
-
 	</div>
 	<button class="bigBox-Button ">Empezar curos</button>
-	
-</div>
+</div> -->
 <div class="container">
 	
 	<h1>BigBox: <small>Notification</small></h1>
 	<hr>
-
+	<button class="btn btn-primary">Mostrar BigBox</button>
 
 </div>
 
@@ -50,9 +48,21 @@
 	$(".bigBox-Fondo").fadeIn(300);
 </script> -->
 
+<script src="js/bigBox.js"></script>
 
-
-
+<script>
+	
+	$("button").on("click",function(){
+		$.bigBox({
+			fa:"fa-thumbs-down",
+			titulo:"Desde botón",
+			contenido:"este es el contenido del bigbox",
+			boton:"Entrar"
+		},function(boton){
+			console.log(boton)
+		});
+	});
+</script>
 
 </body>
 </html>

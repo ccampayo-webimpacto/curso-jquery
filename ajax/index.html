@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Insetando desde Ajax</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+
+	<script src="js/lib/TweenMax.min.js"></script>
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+
+
+
+<div class="container">
+	
+	<h1>Peticiones Ajax, <small> jquery</small></h1>
+	<hr>
+
+	<form action="" class="form-horizontal" id="frmData">
+		<label for="txtnombre">Nombre</label>
+		<input type="text" name="txtnombre" id="nombre" class="form-control">
+
+		<label >Estado</label>
+		<select name="cmbestado" id="estado" class="form-control">
+			<option value="activo">Activo</option>
+			<option value="eliminado">Eliminado</option>
+		</select>
+		<br>
+		<button class="btn btn-primary" type="submit">Guardar</button>
+        <input type="hidden" name="id" id="id"> 
+	</form>
+	
+
+</div>
+
+
+
+<script src="js/ajax.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+

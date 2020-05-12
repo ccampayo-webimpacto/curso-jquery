@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Insertando desde Ajax</title>
+
+	<!-- Importacion del jQuery -->
+	<script src="js/lib/jquery-2.1.4.min.js"></script>
+
+	<script src="js/lib/TweenMax.min.js"></script>
+	
+	<!-- Importacion del Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+
+
+
+<div class="container">
+	
+	<h1>Peticiones Ajax, <small> jquery</small></h1>
+	<hr>
+
+	<form action="" class="form-horizontal" id="frmData">
+		<label for="txtnombre">Nombre</label>
+		<input type="text" name="txtnombre" class="form-control">
+
+		<label >Estado</label>
+		<select name="cmbestado" class="form-control">
+			<option value="activo">Activo</option>
+			<option value="eliminado">Eliminado</option>
+		</select>
+		<br>
+		<a class="btn btn-primary" href="/ajax/index.html">Guardar</a>
+		<button class="btn btn-primary" type="submit">Cancelar</button>
+
+	</form>
+	
+
+</div>
+
+
+
+<script src="js/actualizar.js"></script>
+
+
+
+
+
+
+</body>
+</html>

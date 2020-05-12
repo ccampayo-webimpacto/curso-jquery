@@ -28,16 +28,16 @@
 
 	<form action="" class="form-horizontal" id="frmData">
 		<label for="txtnombre">Nombre</label>
-		<input type="text" name="txtnombre" class="form-control">
+		<input type="text" name="txtnombre" id="nombre" class="form-control">
 
 		<label >Estado</label>
-		<select name="cmbestado" class="form-control">
+		<select name="cmbestado" id="estado" class="form-control">
 			<option value="activo">Activo</option>
 			<option value="eliminado">Eliminado</option>
 		</select>
 		<br>
 		<button class="btn btn-primary" type="submit">Guardar</button>
-
+        <input type="hidden" name="id" id="id"> 
 	</form>
 	
 
